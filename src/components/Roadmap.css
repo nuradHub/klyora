@@ -1,0 +1,200 @@
+.roadmap-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-content: center;
+  justify-content: space-around;
+  padding: 50px 20px;
+}
+.time-line-section{
+  flex: 1;
+  max-width: 400px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.time-line-section p{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+}
+.time-line-section p svg.fa-circle-arrow-right{
+  color:#1551a0;
+  font-weight: bold;
+}
+.time-line-section h4{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.klyora-logo-contaier{
+  max-width: 350px;
+  margin: 0 auto;
+}
+.klyora-logo-contaier img{
+  width: 100%;
+  animation: bounce 2s linear infinite;
+}
+@keyframes bounce {
+  0%{
+    transform: translateY(2%);
+  }
+  50%{
+    transform: translateY(-2%);
+  }
+  100%{
+    transform: translateY(2%);
+  }
+}
+
+.roadmap-contents{
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 400px;
+  gap: 25px;
+  position: relative;
+}
+.roadmap-left,
+.roadmap-right{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+.roadmap-left-data,
+.roadmap-right-data{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 150px;
+}
+.roadmap-left-data p,
+.roadmap-right-data p{
+  font-size: 10px;
+}
+.roadmap-left-data h4,
+.roadmap-right-data h4{
+  font-size: 12px;
+}
+.roadmap-contents .line{
+  position: relative;
+  height: 100%;
+  border-left: 5px solid white;
+}
+.roadmap-contents .line span.line2{
+  position: absolute;
+  left: 0;
+  transform: translateX(-5px);
+  border-left: 5px solid rgb(20, 103, 199);
+  height: 200px;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+.roadmap-container{
+  gap: 15px;
+}
+.time-line-section p{
+  font-size: 20px;
+}
+.time-line-section h4{
+  font-size: 20px;
+}
+.roadmap-contents{
+  gap: 10px;
+}
+}
+
+@media screen and (min-width: 540px) {
+.roadmap-container{
+  flex-direction: column;
+}
+.time-line-section p{
+  font-size: 20px;
+}
+.time-line-section h4{
+  font-size: 20px;
+}
+.roadmap-left-data,
+.roadmap-right-data{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+}
+.roadmap-left-data p,
+.roadmap-right-data p{
+  font-size: 15px;
+}
+.roadmap-left-data h4,
+.roadmap-right-data h4{
+  font-size: 15px;
+}
+}
+@media screen and (min-width: 853px) {
+.roadmap-container{
+  flex-direction: row;
+}
+.time-line-section p{
+  font-size: 25px;
+}
+.time-line-section h4{
+  font-size: 25px;
+}
+.roadmap-contents{
+  gap: 10px;
+  max-width: 450px;
+}
+.roadmap-left-data,
+.roadmap-right-data{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+}
+.roadmap-left-data p,
+.roadmap-right-data p{
+  font-size: 18px;
+}
+.roadmap-left-data h4,
+.roadmap-right-data h4{
+  font-size: 20px;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.time-line-section p{
+  font-size: 30px;
+}
+.time-line-section h4{
+  font-size: 30px;
+}
+.roadmap-contents{
+  gap: 10px;
+  max-width: 450px;
+}
+.roadmap-left-data,
+.roadmap-right-data{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+}
+.roadmap-left-data p,
+.roadmap-right-data p{
+  font-size: 18px;
+}
+.roadmap-left-data h4,
+.roadmap-right-data h4{
+  font-size: 20px;
+}
+}

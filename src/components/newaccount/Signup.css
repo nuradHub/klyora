@@ -1,0 +1,131 @@
+.signup-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  background-image: url('/img/area_bg_02.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.signup-content {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.signup-content h4{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(194, 194, 194);
+  width: 100%;
+}
+.user-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.name-container,
+.email-container,
+.password-container{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+.name-container label,
+.email-container label,
+.password-container label{
+  color: rgb(194, 194, 194);
+  width: 100%;
+}
+.name-container input,
+.email-container input,
+.password-container input{
+  background-color: rgb(34, 34, 34);
+  color: rgb(194, 194, 194);
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(109, 109, 109);
+  font-size: 15px;
+  width: 100%;
+}
+.name-container input:focus,
+.email-container input:focus,
+.password-container input:focus{
+  outline: none;
+}
+.user-form button{
+  background-color: rgb(35, 21, 240);
+  color: rgb(194, 194, 194);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+.signup-container .signup-option-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.signup-container .signup-option-container::before,
+.signup-container .signup-option-container::after{
+  content: "";
+  border: 1px solid rgb(77, 77, 77);
+  width: 100px;
+}
+.signup-container .option-buttons{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.signup-container .option-buttons button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  background-color: rgb(22, 22, 22);
+  color: rgb(197, 197, 197);
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgb(41, 41, 41);
+  font-size: 5px;
+  font-weight: bold;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.signup-container .option-buttons button.google-button{
+  background-image: url('/img/google-logo.png');
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: 13px;
+}
+.signup-container .option-buttons button.discord-button{
+  background-image: url('/img/discord-icon.png');
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: 13px;
+}
+.signup-container .option-buttons button.linkdin-button{
+  background-image: url('/img/linkedin-logo.png');
+  background-repeat: no-repeat;
+  background-position: 5%;
+  background-size: 13px;
+}
+.signup-container .existing-account{
+  text-align: center;
+  font-size: 13px;
+  color: rgb(173, 173, 173);
+}
+.signup-container .existing-account a{
+  color: rgb(51, 51, 245);
+  text-decoration: none;
+  cursor: pointer;
+}

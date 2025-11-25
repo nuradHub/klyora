@@ -1,0 +1,10 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100dvh;
+    background-color: #000000ec;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

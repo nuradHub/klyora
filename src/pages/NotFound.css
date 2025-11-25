@@ -1,0 +1,34 @@
+.not-found-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+}
+.not-found-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.not-found-contents h4{
+  text-align: center;
+  font-size: 15px;
+}
+.not-found-contents p{
+  font-size: 14px;
+}
+.not-found-contents p a{
+  color: rgb(55, 156, 250);
+}
+
+/* media query */
+
+@media screen and (max-width: 500px) {
+.not-found-contents h4{
+  font-size: 11px;
+}
+.not-found-contents p{
+  font-size: 12px;
+} 
+}
