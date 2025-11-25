@@ -2,7 +2,7 @@ import KlyoraLogo from '../assets/logo/klyora-1.png'
 import KlyoraLogo2 from '../assets/logo/klyora-2.png'
 import Faq from '../components/Faq'
 import Features from '../components/Features'
-import Roadmap from '../components/RoadMap'
+import Roadmap from '../components/Roadmap'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import './Home.css'
